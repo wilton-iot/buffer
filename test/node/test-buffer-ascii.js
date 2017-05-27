@@ -1,5 +1,6 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
-var Buffer = require('../../').Buffer;
+var Buffer = require('buffer/../').Buffer;
 
 
 var assert = require('assert');
@@ -26,3 +27,5 @@ for (var i = 0; i < expected.length; ++i) {
   if (input.charCodeAt(i) > 127) ++i;
 }
 
+
+return module.exports;});

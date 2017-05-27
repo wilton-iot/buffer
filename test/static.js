@@ -1,5 +1,6 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 if (process.env.OBJECT_IMPL) global.TYPED_ARRAY_SUPPORT = false
-var B = require('../').Buffer
+var B = require('buffer/').Buffer
 var test = require('tape')
 
 test('Buffer.isEncoding', function (t) {
@@ -15,3 +16,5 @@ test('Buffer.isBuffer', function (t) {
   t.equal(B.isBuffer('hey'), false)
   t.end()
 })
+
+return module.exports;});

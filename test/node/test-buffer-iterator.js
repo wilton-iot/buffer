@@ -1,5 +1,6 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
-var Buffer = require('../../').Buffer;
+var Buffer = require('buffer/../').Buffer;
 
 
 var assert = require('assert');
@@ -63,3 +64,5 @@ assert.deepStrictEqual(arr, [
   [4, 5]
 ]);
 
+
+return module.exports;});

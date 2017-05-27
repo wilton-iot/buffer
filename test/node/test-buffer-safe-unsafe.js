@@ -1,5 +1,6 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
-var Buffer = require('../../').Buffer;
+var Buffer = require('buffer/../').Buffer;
 
 
 
@@ -25,3 +26,5 @@ assert(isZeroFilled(new Float64Array(10)));
 Buffer.allocUnsafe(10);
 assert(isZeroFilled(Buffer.alloc(10)));
 
+
+return module.exports;});

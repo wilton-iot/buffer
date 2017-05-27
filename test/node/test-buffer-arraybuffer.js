@@ -1,11 +1,12 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
-var Buffer = require('../../').Buffer;
+var Buffer = require('buffer/../').Buffer;
 
 
 
 var assert = require('assert');
 
-var Buffer = require('../../').Buffer;
+var Buffer = require('buffer/../').Buffer;
 var LENGTH = 16;
 
 var ab = new ArrayBuffer(LENGTH);
@@ -110,3 +111,5 @@ b.writeDoubleBE(11.11, 0, true);
   });
 }
 
+
+return module.exports;});

@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 /*!
  * The buffer module from node.js, for the browser.
  *
@@ -10,7 +11,7 @@
 
 var base64 = require('base64-js')
 var ieee754 = require('ieee754')
-var isArray = require('isarray')
+var isArray = Array.isArray
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -1787,3 +1788,5 @@ function blitBuffer (src, dst, offset, length) {
 function isnan (val) {
   return val !== val // eslint-disable-line no-self-compare
 }
+
+return module.exports;});

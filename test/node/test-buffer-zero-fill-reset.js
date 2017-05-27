@@ -1,5 +1,6 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
-var Buffer = require('../../').Buffer;
+var Buffer = require('buffer/../').Buffer;
 
 
 
@@ -20,3 +21,5 @@ for (var i = 0; i < 100; i++) {
   assert.ok(testUint8Array(ui), 'Uint8Array is not zero-filled');
 }
 
+
+return module.exports;});

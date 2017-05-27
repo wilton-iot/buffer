@@ -1,5 +1,6 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
-var Buffer = require('../../').Buffer;
+var Buffer = require('buffer/../').Buffer;
 
 
 
@@ -270,3 +271,5 @@ function testBufs(string, offset, length, encoding) {
                          writeToFill.apply(null, arguments));
 }
 
+
+return module.exports;});

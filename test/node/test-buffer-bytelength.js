@@ -1,11 +1,12 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
-var Buffer = require('../../').Buffer;
+var Buffer = require('buffer/../').Buffer;
 
 
 
 var assert = require('assert');
-var Buffer = require('../../').Buffer;
-var SlowBuffer = require('../../').SlowBuffer;
+var Buffer = require('buffer/../').Buffer;
+var SlowBuffer = require('buffer/../').SlowBuffer;
 
 // coerce values to string
 assert.equal(Buffer.byteLength(32, 'latin1'), 2);
@@ -88,3 +89,5 @@ assert.equal(Buffer.byteLength('Il était tué', 'binary'), 12);
   assert.equal(24, Buffer.byteLength('Il était tué', encoding));
 });
 
+
+return module.exports;});

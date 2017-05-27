@@ -1,5 +1,6 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 if (process.env.OBJECT_IMPL) global.TYPED_ARRAY_SUPPORT = false
-var B = require('../').Buffer
+var B = require('buffer/').Buffer
 var test = require('tape')
 
 test('new buffer from array', function (t) {
@@ -191,3 +192,5 @@ test('new buffer from buffer.toJSON() output', function (t) {
   t.ok(buf.equals(copy))
   t.end()
 })
+
+return module.exports;});

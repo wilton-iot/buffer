@@ -1,7 +1,8 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 if (process.env.OBJECT_IMPL) global.TYPED_ARRAY_SUPPORT = false
-var B = require('../').Buffer
+var B = require('buffer/').Buffer
 var test = require('tape')
-var isnan = require('is-nan')
+var isnan = require('lodash/isNaN')
 
 test('buffer.write string should get parsed as number', function (t) {
   var b = new B(64)
@@ -129,3 +130,5 @@ test('large values do not improperly roll over (ref #80)', function (t) {
   t.equal(nums[2], newNum)
   t.end()
 })
+
+return module.exports;});

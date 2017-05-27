@@ -1,5 +1,6 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 if (process.env.OBJECT_IMPL) global.TYPED_ARRAY_SUPPORT = false
-var B = require('../').Buffer
+var B = require('buffer/').Buffer
 var test = require('tape')
 
 test('detect utf16 surrogate pairs', function (t) {
@@ -130,3 +131,5 @@ test('handle invalid utf16 code points when encoding to utf8 the way node does',
 
   t.end()
 })
+
+return module.exports;});

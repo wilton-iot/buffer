@@ -1,10 +1,11 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
-var Buffer = require('../../').Buffer;
+var Buffer = require('buffer/../').Buffer;
 
 
 
 var assert = require('assert');
-var buffer = require('../../');
+var buffer = require('buffer/../');
 var Buffer = buffer.Buffer;
 var SlowBuffer = buffer.SlowBuffer;
 
@@ -61,3 +62,5 @@ assert.throws(function() {
   SlowBuffer(buffer.kMaxLength + 1);
 }, 'invalid Buffer length');
 
+
+return module.exports;});

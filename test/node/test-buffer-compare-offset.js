@@ -1,5 +1,6 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
-var Buffer = require('../../').Buffer;
+var Buffer = require('buffer/../').Buffer;
 
 
 
@@ -64,3 +65,5 @@ assert.throws(() => a.compare(b, 0, Infinity), oor);
 assert.throws(() => a.compare(b, -Infinity, Infinity), oor);
 assert.throws(() => a.compare(), /Argument must be a Buffer/);
 
+
+return module.exports;});

@@ -1,11 +1,12 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
-var Buffer = require('../../').Buffer;
+var Buffer = require('buffer/../').Buffer;
 
 var common = { skip: function () {} };
 var assert = require('assert');
 
-var Buffer = require('../../').Buffer;
-var SlowBuffer = require('../../').SlowBuffer;
+var Buffer = require('buffer/../').Buffer;
+var SlowBuffer = require('buffer/../').SlowBuffer;
 
 // counter to ensure unique value is always copied
 var cntr = 0;
@@ -1532,3 +1533,5 @@ assert.throws(() => Buffer(-100),
 assert.throws(() => Buffer(-1),
               '"size" argument must not be negative');
 
+
+return module.exports;});

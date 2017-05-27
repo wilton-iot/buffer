@@ -1,5 +1,6 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
-var Buffer = require('../../').Buffer;
+var Buffer = require('buffer/../').Buffer;
 
 // Flags: --zero-fill-buffers
 
@@ -7,7 +8,7 @@ var Buffer = require('../../').Buffer;
 // instance must be zero filled upon creation
 
 
-var SlowBuffer = require('../../').SlowBuffer;
+var SlowBuffer = require('buffer/../').SlowBuffer;
 var assert = require('assert');
 
 function isZeroFilled(buf) {
@@ -33,3 +34,5 @@ for (var i = 0; i < 50; i++) {
   }
 }
 
+
+return module.exports;});

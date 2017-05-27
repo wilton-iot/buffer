@@ -1,9 +1,10 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
-var Buffer = require('../../').Buffer;
+var Buffer = require('buffer/../').Buffer;
 
 
 var assert = require('assert');
-var Buffer = require('../../').Buffer;
+var Buffer = require('buffer/../').Buffer;
 
 // Test hex strings and bad hex strings
 {
@@ -44,3 +45,5 @@ var Buffer = require('../../').Buffer;
   assert.deepStrictEqual(Buffer.from(badHex, 'hex'), buf5.slice(0, 128));
 }
 
+
+return module.exports;});

@@ -1,5 +1,6 @@
-var BrowserBuffer = require('../').Buffer // (this module)
-var util = require('./util')
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var BrowserBuffer = require('buffer/').Buffer // (this module)
+var util = require('buffer/util')
 var suite = util.suite()
 
 var LENGTH = 160
@@ -27,3 +28,5 @@ if (!process.browser) suite
       nodeBuffer.writeFloatBE(97.1919 + i, i * 4)
     }
   })
+
+return module.exports;});

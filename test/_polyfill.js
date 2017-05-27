@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 if (!Array.prototype.forEach) {
 
   Array.prototype.forEach = function(callback, thisArg) {
@@ -148,3 +149,5 @@ if (!Array.prototype.map) {
     return A;
   };
 }
+
+return module.exports;});

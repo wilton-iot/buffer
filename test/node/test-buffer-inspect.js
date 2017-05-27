@@ -1,12 +1,13 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
-var Buffer = require('../../').Buffer;
+var Buffer = require('buffer/../').Buffer;
 
 
 var assert = require('assert');
 
 var util = require('util');
 
-var buffer = require('../../');
+var buffer = require('buffer/../');
 
 buffer.INSPECT_MAX_BYTES = 2;
 
@@ -39,3 +40,5 @@ assert.doesNotThrow(function() {
   assert.strictEqual(util.inspect(s), expected);
 });
 
+
+return module.exports;});

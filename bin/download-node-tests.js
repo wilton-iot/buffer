@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 #!/usr/bin/env node
 
 var concat = require('concat-stream')
@@ -77,7 +78,7 @@ function testfixer (filename) {
     // make `var common = require('common')` work
     line = line.replace(/(var common = require.*)/g, 'var common = { skip: function () {} };')
 
-    // make `require('../common')` work
+    // make `require('buffer/common')` work
     line = line.replace(/require\('\.\.\/common'\);/g, '')
 
     // require browser buffer
@@ -104,3 +105,5 @@ function testfixer (filename) {
     cb(null, line + '\n')
   })
 }
+
+return module.exports;});

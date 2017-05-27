@@ -1,5 +1,6 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 if (process.env.OBJECT_IMPL) global.TYPED_ARRAY_SUPPORT = false
-var B = require('../').Buffer
+var B = require('buffer/').Buffer
 var test = require('tape')
 
 test('write/read Infinity as a float', function (t) {
@@ -43,3 +44,5 @@ test('write/read float less than min', function (t) {
   t.equal(buf.readFloatBE(0), -Infinity)
   t.end()
 })
+
+return module.exports;});

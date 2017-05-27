@@ -1,5 +1,6 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
-var Buffer = require('../../').Buffer;
+var Buffer = require('buffer/../').Buffer;
 
 
 
@@ -139,3 +140,5 @@ assert.throws(() => Buffer.alloc(1025).swap32(), re32);
 assert.throws(() => buf3.slice(1, 3).swap64(), re64);
 assert.throws(() => Buffer.alloc(1025).swap64(), re64);
 
+
+return module.exports;});

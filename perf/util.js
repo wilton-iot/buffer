@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 var benchmark = require('benchmark')
 
 exports.suite = function () {
@@ -17,3 +18,5 @@ exports.suite = function () {
   })
   return suite
 }
+
+return module.exports;});

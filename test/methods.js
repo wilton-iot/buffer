@@ -1,7 +1,7 @@
 define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 if (process.env.OBJECT_IMPL) global.TYPED_ARRAY_SUPPORT = false
 var B = require('buffer/').Buffer
-var test = require('tape')
+var test = require('tape-compat')
 
 test('buffer.toJSON', function (t) {
   var data = [1, 2, 3, 4]

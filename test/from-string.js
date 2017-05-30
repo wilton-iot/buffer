@@ -1,7 +1,7 @@
 define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 if (process.env.OBJECT_IMPL) global.TYPED_ARRAY_SUPPORT = false
 var B = require('buffer/').Buffer
-var test = require('tape')
+var test = require('tape-compat')
 
 test('detect utf16 surrogate pairs', function (t) {
   var text = '\uD83D\uDE38' + '\uD83D\uDCAD' + '\uD83D\uDC4D'

@@ -1,7 +1,7 @@
 define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 if (process.env.OBJECT_IMPL) global.TYPED_ARRAY_SUPPORT = false
 var B = require('buffer/').Buffer
-var test = require('tape')
+var test = require('tape-compat')
 
 test('modifying buffer created by .slice() modifies original memory', function (t) {
   if (!B.TYPED_ARRAY_SUPPORT) return t.end()

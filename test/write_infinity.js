@@ -1,7 +1,7 @@
 define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 if (process.env.OBJECT_IMPL) global.TYPED_ARRAY_SUPPORT = false
 var B = require('buffer/').Buffer
-var test = require('tape')
+var test = require('tape-compat')
 
 test('write/read Infinity as a float', function (t) {
   var buf = new B(4)

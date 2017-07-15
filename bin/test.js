@@ -1,5 +1,4 @@
 define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
-#!/usr/bin/env node
 
 var cp = require('child_process')
 var fs = require('fs')

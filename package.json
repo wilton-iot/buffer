@@ -73,5 +73,12 @@
       "test/_polyfill.js",
       "perf/*.js"
     ]
+  },
+  "wilton": {
+    "excludes": [
+      "bin",
+      "perf",
+      "test"
+    ]
   }
 }

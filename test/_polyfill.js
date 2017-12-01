@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 if (!Array.prototype.forEach) {
 
   Array.prototype.forEach = function(callback, thisArg) {
@@ -150,4 +150,4 @@ if (!Array.prototype.map) {
   };
 }
 
-return module.exports;});
+require = requireOrig;});

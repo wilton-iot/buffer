@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 /*!
  * The buffer module from node.js, for the browser.
  *
@@ -1789,4 +1789,4 @@ function isnan (val) {
   return val !== val // eslint-disable-line no-self-compare
 }
 
-return module.exports;});
+require = requireOrig;});

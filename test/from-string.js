@@ -1,6 +1,6 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 if (process.env.OBJECT_IMPL) global.TYPED_ARRAY_SUPPORT = false
-var B = require('buffer/').Buffer
+var B = require('buffer').Buffer
 var test = require('tape-compat')
 
 test('detect utf16 surrogate pairs', function (t) {
@@ -132,4 +132,4 @@ test('handle invalid utf16 code points when encoding to utf8 the way node does',
   t.end()
 })
 
-return module.exports;});
+require = requireOrig;});

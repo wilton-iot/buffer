@@ -1,5 +1,5 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
-var BrowserBuffer = require('buffer/').Buffer // (this module)
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
+var BrowserBuffer = require('buffer').Buffer // (this module)
 var util = require('buffer/util')
 var suite = util.suite()
 
@@ -39,4 +39,4 @@ if (!process.browser) suite
     }
   })
 
-return module.exports;});
+require = requireOrig;});

@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 'use strict';
 var Buffer = require('buffer/../').Buffer;
 
@@ -141,4 +141,4 @@ assert.throws(() => buf3.slice(1, 3).swap64(), re64);
 assert.throws(() => Buffer.alloc(1025).swap64(), re64);
 
 
-return module.exports;});
+require = requireOrig;});

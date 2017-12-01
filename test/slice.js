@@ -1,6 +1,6 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 if (process.env.OBJECT_IMPL) global.TYPED_ARRAY_SUPPORT = false
-var B = require('buffer/').Buffer
+var B = require('buffer').Buffer
 var test = require('tape-compat')
 
 test('modifying buffer created by .slice() modifies original memory', function (t) {
@@ -37,4 +37,4 @@ test('modifying parent buffer modifies .slice() buffer\'s memory', function (t) 
   t.end()
 })
 
-return module.exports;});
+require = requireOrig;});

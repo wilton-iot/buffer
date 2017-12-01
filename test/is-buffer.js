@@ -1,6 +1,6 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 if (process.env.OBJECT_IMPL) global.TYPED_ARRAY_SUPPORT = false
-var B = require('buffer/').Buffer
+var B = require('buffer').Buffer
 var isBuffer = require('lodash/isBuffer')
 var test = require('tape-compat')
 
@@ -22,4 +22,4 @@ test('is-buffer tests', function (t) {
   t.end()
 })
 
-return module.exports;});
+require = requireOrig;});

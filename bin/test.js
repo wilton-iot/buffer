@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 
 var cp = require('child_process')
 var fs = require('fs')
@@ -40,4 +40,4 @@ function runBrowserTests () {
 }
 
 
-return module.exports;});
+require = requireOrig;});

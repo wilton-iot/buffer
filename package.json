@@ -79,7 +79,7 @@
       "bin",
       "perf",
       "test",
-      "test.js",
+      "test.js"
     ]
   }
 }
